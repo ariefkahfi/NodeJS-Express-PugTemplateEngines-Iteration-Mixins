@@ -1,0 +1,15 @@
+html
+    head
+        title test mixins dengan (code)
+
+    body
+        mixin test(text)
+            -
+                var a = "hello"
+                var b = "world"
+
+            -for(var i=0; i<4; i++)
+                span= `text is :  ${text} , var a = ${a} , var b = ${b}`
+                <br/>                                                    
+        div
+            +test('hello')         
